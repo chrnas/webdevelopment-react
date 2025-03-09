@@ -1,0 +1,381 @@
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Resetting some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  flex-direction: column;
+  font-family: Georgia, Verdana, serif;
+  line-height: 1.6;
+  color: #eeeeee; /* Light text for readability */
+  margin: 0;
+  height: 100%;
+  background-image: linear-gradient(#aaaaaa,#000000);
+}
+
+header {
+  padding: 20px 0;
+  text-align: center;
+  align-items: center; /* Ensures vertical alignment */
+  justify-content: center; /* Centers header content */
+  flex-wrap: wrap; /* Allows wrapping when necessary */
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-right: 20px; /* Adds some space between title and logo */
+}
+
+header img {
+  width: 16vh;
+  height: 10vh;
+  object-fit: contain; /* Ensure the image maintains aspect ratio */
+}
+
+.banner {
+  color: #eeeeee;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* Main Content */
+.main-content {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  justify-content: center;
+  text-align: center;
+}
+
+main {
+  padding: 20px 0;
+  min-height: 100vh
+}
+
+footer {
+  color: #eeeeee;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+}
+
+/* Headings */
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #eeeeee;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #eeeeee;
+  margin-bottom: 0.8rem;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #eeeeee;
+  margin-bottom: 0.6rem;
+}
+
+a {
+  text-decoration: none;
+  color: #eeeeee;
+  color: #eeeeee;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+a:hover {
+  color: #fcfeff;
+  text-shadow: 0 0 3px #fcfeff;
+}
+
+ul{
+  list-style: none;
+}
+
+li {
+  justify-content: center;
+  text-align: center; 
+  margin: 5vh;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse; /* Remove space beetween cells */
+}
+th, td {
+  border: 1px solid black; /* Add simple borders around cells */
+  padding: 8px; /* Add inner distance */
+  text-align: left;
+}
+th {
+  background-color: #918f8f;
+}
+
+button {
+  justify-content: center;
+  margin: 10px;
+  width: 15vh;
+  min-width: 10vh; 
+  padding: 10px;
+  background: #b1b1b1;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  color: #eeeeee; /* Change text color on hover */
+  background: #444;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  background: #b1b1b1;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+  min-width: 20vh; 
+  max-width: 80vh;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 60px;
+}
+
+nav a {
+  background-color: transparent;
+  border: none;
+  padding: 10px 15px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #eeeeee;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+nav a:hover {
+  color: #fcfeff;
+  text-shadow: 0 0 3px #fcfeff;
+}
+
+.offer-lane{
+  display:flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.offer-card{
+  margin-right: 10vh;
+  display: flex;
+  background-color: #808080;
+  padding: 3vh;
+  border-radius: 10px;
+  box-shadow: #333;
+  transition: transform 0.2s ease-in-out;
+}
+
+.offer-card:hover{
+  transform: scale(1.05);
+}
+
+.offer-card img{
+  width: 20vh;
+  height: 20vh;
+  margin-right: 2vh;
+}
+
+.offer-text div{
+  background-color: rgba(187, 4, 4, 0.616);
+  align-self: flex-end;
+  border-radius: 5px;
+}
+
+.offer-card p{
+  display: flex;
+  flex-direction: row;
+  max-width: 200px;
+  transform: translateY(0);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  animation: fadeIn 1s ease-out forwards;
+  visibility: visible;
+}
+
+.map iframe{
+  width:100%; 
+}
+
+video {
+  width: 90vw; /* Set width dynamically */
+  height: auto; /* Adjust height to maintain aspect ratio */
+  max-width: 600px; /* Prevents too much stretching */
+}
+
+.form-area{
+  margin-top: 30px;
+}
+
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    color: #eeeeee;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    margin-bottom: 20px;
+    width: 100%;
+    background: #b1b1b1;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form input[type="button"] {
+  width: 100%;
+  padding: 10px;
+  background: #b1b1b1;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form input[type="button"]:hover {
+    background: #444;
+}
+
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+/* Stack header content vertically */
+header {
+  flex-direction: column;
+  padding: 10px;
+}
+
+header h1 {
+  font-size: 2rem; /* Adjust font size for smaller screens */
+  margin-right: 0; /* Remove space for mobile */
+  margin-bottom: 10px; /* Add space between title and logo */
+}
+
+nav {
+  height: auto; /* Allow the nav to expand vertically */
+  flex-direction: column; /* Stack items vertically */
+  padding: 10px 0; /* Add padding for spacing */
+}
+
+nav a {
+  padding: 10px 20px; /* Increase padding for easier clicking */
+  font-size: 1.3rem; /* Slightly adjust font size for smaller screens */
+}
+
+.offer-lane {
+  flex-direction: column; /* Stack cards vertically on smaller screens */
+  align-items: center; /* Center the cards horizontally */
+}
+
+.offer-card {
+  margin-right: 0; /* Remove the right margin on smaller screens */
+  margin-bottom: 20px; /* Add space between cards vertically */
+  max-width: 90%; /* Allow cards to take up more width */
+  flex-basis: 100%; /* Make each card take full width */
+}
+
+.offer-card img {
+  width: 40vw; /* Make the image more responsive */
+  height: 40vw; /* Adjust height according to aspect ratio */
+}
+
+.offer-card p{
+  max-width: 10px
+}
+
+video {
+  width: 90vw;
+  height: auto;
+}
+}
+
+@media print {
+body {
+  font-family: Arial, sans-serif; /* Change to great font for printing*/
+  font-size: 12pt;
+  color: black; /* Make text black for easily readable text on print */
+  background-color: white; /* Place background to white */
+}
+
+/* TRemove unwanted elements */
+header, nav {
+  display: none;
+}
+
+/* Adjust picture size for printing */
+img {
+  max-width: 100%;
+  height: auto;
+  page-break-inside: avoid;
+}
+
+/* Create headers in clear style for printing */
+h1, h2, h3 {
+  font-weight: bold;
+  color: black;
+}
+}
+
+@keyframes fadeIn {
+from {
+  opacity: 0;
+}
+to {
+  opacity: 1;
+}
+}
