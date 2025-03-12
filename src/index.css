@@ -25,6 +25,8 @@ body {
   margin: 0;
   height: 100%;
   background-image: linear-gradient(#aaaaaa,#000000);
+  background-size: cover; /* Ensures the gradient covers the body */
+  background-attachment: fixed;
 }
 
 header {
@@ -151,6 +153,11 @@ button:hover {
   background: #444;
 }
 
+.menu-button.selected {
+  background-color: #5c5c5c;
+  color: white;
+}
+
 input {
   width: 100%;
   padding: 10px;
@@ -242,6 +249,7 @@ video {
   width: 90vw; /* Set width dynamically */
   height: auto; /* Adjust height to maintain aspect ratio */
   max-width: 600px; /* Prevents too much stretching */
+  border:0;
 }
 
 .form-area{

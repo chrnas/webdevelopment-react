@@ -1,0 +1,60 @@
+[
+    { "name": "Margherita", "description": "ost", "category": "pizza" },
+    { "name": "Vesuvio", "description": "skinka", "category": "pizza" },
+    { "name": "Bologna", "description": "köttfärs", "category": "pizza" },
+    { "name": "Calzone", "description": "skinka", "category": "pizza" },
+    { "name": "Tutti Frutti", "description": "ananas, banan", "category": "pizza" },
+    { "name": "Hawaii", "description": "skinka, ananas", "category": "pizza" },
+    { "name": "Capricciosa", "description": "skinka, champinjoner", "category": "pizza" },
+    { "name": "Venezia", "description": "skinka, räkor", "category": "pizza" },
+    { "name": "Paradiso", "description": "räkor, champinjoner", "category": "pizza" },
+    { "name": "Paesana", "description": "bacon, lök", "category": "pizza" },
+    { "name": "Cacciatorav", "description": "salami, lök", "category": "pizza" },
+    { "name": "Pescatore", "description": "tonfisk, räkor", "category": "pizza" },
+
+    { "name": "Vegetaria", "description": "champinjoner, lök, paprika, ananas, kronärtskocka", "category": "pizza" },
+    { "name": "Nino", "description": "champinjoner, lök, köttfärssås, räkor", "category": "pizza" },
+    { "name": "Long John", "description": "skinka, tonfisk, räkor", "category": "pizza" },
+    { "name": "Quattro Stagioni", "description": "skinka, tonfisk, räkor, musslor, kronärtskocka", "category": "pizza" },
+    { "name": "Kycklingpizza", "description": "kyckling, ananas, curry, banan, lök", "category": "pizza" },
+    { "name": "Grekisk special", "description": "fetaost, feferoni, lök, oliver, tomater (färska)", "category": "pizza" },
+
+    { "name": "Kebabpizza", "description": "tomatsås, ost, kebabsås mild, feferoni, lök, tomater (färska), kebabkött", "category": "pizza" },
+    { "name": "Kebabpizza special", "description": "tomatsås, ost, kebabsås mild, feferoni, isbergssallad, lök, tomater (färska), kebabkött", "category": "pizza" },
+    { "name": "Kebabpizza med pommes", "description": "tomatsås, ost, kebabsås mild, feferoni, lök, tomater (färska), kebabkött, pommes", "category": "pizza" },
+    { "name": "Viking kebab", "description": "tomatsås, ost, kebabsås, feferoni, gurka, isbergssallad, lök, tomater (färska), kebabkött (fläskkarré)", "category": "pizza" },
+
+    { "name": "Acapulco", "description": "tacosås, tacokryddmix, jalapeño, oxfilé, vitlök, champinjoner, lök", "category": "pizza" },
+    { "name": "Mexicana special", "description": "köttfärs, tacosås, jalapeño, kryddmix, lök, paprika", "category": "pizza" },
+    { "name": "Azteka", "description": "skinka, tacosås, jalapeño, kryddmix, kebabsås", "category": "pizza" },
+
+    { "name": "Black&white", "description": "oxfilé, fläskfilé, bearnaisesås", "category": "pizza" },
+    { "name": "De Chef", "description": "oxfilé, champinjoner, bearnaisesås", "category": "pizza" },
+    { "name": "Tropicana", "description": "skinka, räkor, banan, fläskfile", "category": "pizza" },
+    { "name": "Robban", "description": "paprika, champinjoner, räkor, vitlök, oxfilé, bearnaisesås", "category": "pizza" },
+    { "name": "Studente", "description": "oxfilé, ädelost, lök, purjolök, paprika", "category": "oxfile/flaskfile pizza" },
+    { "name": "Sandra", "description": "purjolök, sparris, färska tomater, oxfilé, bearnaisesås", "category": "pizza" },
+
+    { "name": "Pizza Parma", "description": "parmaskinka, olivolja, mozzarellaost, ruccolasallad, vitlök (färsk), soltorkade tomater", "category": "pizza" },
+    { "name": "Pizza Spenat", "description": "bladspenat, olivolja, färska champinjoner, färska vitlök, fetaost", "category": "pizza" },
+    { "name": "Mozzarella", "description": "champinjoner (färska), olivolja, mozzarellaost, bladspenat, körsbärstomater, vitlök (färsk)", "category": "pizza" },
+    { "name": "Daniella", "description": "gorgonzola, körsbärstomater, ädelost, mozzarellaost, fetaost", "category": "lyx pizza" },
+
+    { "name": "Vegan Kebabpizza", "description": "veganost, vegankebab, färska tomater, feferoni, sås, lök", "category": "pizza" },
+    { "name": "Vegan Kebabpizza Special", "description": "veganost, vegankebab, färska tomater, feferoni, sås, lök, isbergssallad, gurka", "category": "pizza" },
+    { "name": "Vegan Paesana", "description": "cheezly (mozzarella), fejkon (bacon), champinjoner (färska), lök, vitlök (färsk)", "category": "pizza" },
+    { "name": "Vegan Salami", "description": "cheezly (mozzarella), champinjoner (färska), lök, vitlök (färsk), pepperoni (salami)", "category": "pizza" },
+    { "name": "Celine", "description": "zucchini, aubergine (grillad), tomater (soltorkade), mozzarellaost, paprika, ruccola", "category": "pizza" },
+
+    { "name": "Kebabsallad", "description": "kebabkött, isbergssallad, tomat, gurka, lök, paprika, pepperoni, majs, morot, rucola, kebabsås", "category": "salad" },
+    { "name": "Kycklingsallad", "description": "kyckling, isbergssallad, tomat, gurka, lök, paprika, ananas, majs, morot, rucola, rhode islandsås", "category": "salad" },
+    { "name": "Skaldjur Sallad", "description": "räkor, tonfisk, musslor, isbergssallad, tomat, gurka, lök, paprika, majs, citron, dill, morot, rucola, rhode islandsås", "category": "salad" },
+
+    { "name": "Hamburger 90gr med Pommes", "description": "", "category": "other" },
+    { "name": "Hamburger 150gr med Pommes", "description": "", "category": "other" },
+    { "name": "Pasta med Bolognese", "description": "", "category": "pasta" },
+    { "name": "Pasta med Carbonara", "description": "", "category": "pasta" },
+    { "name": "Schnitzel med Pommes", "description": "", "category": "other" },
+
+    { "name": "Lasagne", "description": "", "category": "pasta" }
+]

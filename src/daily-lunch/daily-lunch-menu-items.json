@@ -1,0 +1,7 @@
+[
+        { "day": "Måndag", "dish": "Kycklingspett", "description": "Med pommes och bearnaisesås" },
+        { "day": "Tisdag", "dish": "Panerad rödspetta", "description": "Med remouladsås och potatis" },
+        { "day": "Onsdag", "dish": "Pytt i panna", "description": "Med stekt ägg och rödbetor" },
+        { "day": "Torsdag", "dish": "Raggmunk", "description": "Med stekt fläsk och lingonsylt" },
+        { "day": "Fredag", "dish": "Hemlagad schnitzel", "description": "Med stekt potatis och bearnaisesås" }
+]
