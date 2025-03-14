@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 
-export default function OfferCard({offerCardDescription, offerText, altText, redirectLink}) {
+export default function OfferCard({title, description, offerText, altText, redirectLink, src}) {
 
   const [isDescriptionVisible, setDescriptionVisible] = useState(false);
   const navigate = useNavigate();
@@ -21,11 +21,11 @@ export default function OfferCard({offerCardDescription, offerText, altText, red
       onClick={() => navigate(redirectLink)}
       className="offer-card"
     >
-      <img src="./src/assets/margarita.webp" alt={altText} />
+      <img src={src} alt={altText} />
       <div className="offer-text">
-        <h3>Margarita</h3>
+        <h3>{title}</h3>
         <div className="offer-text">{offerText}</div>
-        {isDescriptionVisible && <p>{offerCardDescription}</p>}
+        {isDescriptionVisible && <p>{description}</p>}
       </div>
     </div>
   );

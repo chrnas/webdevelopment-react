@@ -1,5 +1,7 @@
 import Footer from '../components/Footer.jsx'
 import OfferCard from './OfferCard.jsx'
+import margaritaPic from '../../src/assets/margarita.webp'
+import vesuvioPic from '../../src/assets/vesuvio.webp'
 
 export default function HomePage() {
 
@@ -14,15 +16,19 @@ export default function HomePage() {
             </div>
             <div className="main-content">
                 <div className="offer-lane">
-                    <OfferCard offerCardDescription='En klassisk pizza med tomatsås, mozzarella och färsk basilika – enkel och smakrik.'
-                                offerText='Rea 20 %'
-                                altText='pizza, margarita'
-                                redirectLink='/menu?filter=Margherita'
+                    <OfferCard title='Margarita'
+                        description='En klassisk pizza med tomatsås, mozzarella och färsk basilika – enkel och smakrik.'
+                        offerText='Rea 20 %'
+                        altText='pizza, margarita'
+                        redirectLink='/menu?filter=Margherita'
+                        src={margaritaPic}
                     />
-                    <OfferCard offerCardDescription='En pizza med tomatsås, mozzarella och skinka – en fyllig och härlig favorit!'
-                                offerText='Rea 30 %'
-                                altText='pizza, vesuvio'
-                                redirectLink='/menu?filter=Vesuvio'
+                    <OfferCard title='Vesuvio'
+                        description='En pizza med tomatsås, mozzarella och skinka – en fyllig och härlig favorit!'
+                        offerText='Rea 30 %'
+                        altText='pizza, vesuvio'
+                        redirectLink='/menu?filter=Vesuvio'
+                        src={vesuvioPic}
                     />
                 </div>
             </div>
