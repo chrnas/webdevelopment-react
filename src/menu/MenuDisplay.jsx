@@ -1,8 +1,18 @@
 import { useState, useMemo } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 
 export default function MenuDisplay({ items }) {
-  const [filterValue, setFilterValue] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState("");
+  const navigate = useNavigate();
+  const location = useLocation();
+  const [filterValue, setFilterValue] = useState(new URLSearchParams(location.search).get("filter") || "");
+  const [selectedCategory, setSelectedCategory] = useState(new URLSearchParams(location.search).get("category") || "");
+
+  const updateURL = (filter, category) => {
+    const params = new URLSearchParams();
+    if (filter) params.set("filter", filter);
+    if (category) params.set("category", category);
+    navigate({ search: params.toString() });
+  };
 
   const filteredItems = useMemo(() => {
     return items.filter((item) => {
@@ -20,46 +30,33 @@ export default function MenuDisplay({ items }) {
   }, [items, filterValue, selectedCategory]);
 
   const handleFilterChange = (e) => {
-    setFilterValue(e.target.value);
+    const newFilter = e.target.value;
+    setFilterValue(newFilter);
+    updateURL(newFilter, selectedCategory);
   };
 
   const handleCategoryClick = (category) => {
-    // Toggle the category selection
-    if (selectedCategory === category) {
-      setSelectedCategory(""); // If the category is already selected, deselect it
-    } else {
-      setSelectedCategory(category); // If not selected, select the category
-    }
+    const newCategory = selectedCategory === category ? "" : category; // Toggle category
+    setSelectedCategory(newCategory);
+    updateURL(filterValue, newCategory);
   };
+
+  const categories = ['pizza', 'salad', 'pasta', 'other'];
 
   return (
     <>
       <div className="button-row">
-        <button
-          className={`menu-button ${selectedCategory === 'pizza' ? 'selected' : ''}`}
-          onClick={() => handleCategoryClick('pizza')}
-        >
-          Pizza
-        </button>
-        <button
-          className={`menu-button ${selectedCategory === 'salad' ? 'selected' : ''}`}
-          onClick={() => handleCategoryClick('salad')}
-        >
-          Sallad
-        </button>
-        <button
-          className={`menu-button ${selectedCategory === 'pasta' ? 'selected' : ''}`}
-          onClick={() => handleCategoryClick('pasta')}
-        >
-          Pasta
-        </button>
-        <button
-          className={`menu-button ${selectedCategory === 'other' ? 'selected' : ''}`}
-          onClick={() => handleCategoryClick('other')}
-        >
-          Annat
-        </button>
+        {categories.map((category) => (
+          <button
+            key={category}
+            className={`menu-button ${selectedCategory === category ? "selected" : ""}`}
+            onClick={() => handleCategoryClick(category)}
+          >
+            {category.charAt(0).toUpperCase() + category.slice(1)}
+          </button>
+        ))}
       </div>
+
       <input
         type="text"
         value={filterValue}
@@ -67,14 +64,18 @@ export default function MenuDisplay({ items }) {
         placeholder="Filter items"
       />
 
-      <ul>
-        {filteredItems.map((item, index) => (
-          <li key={index} category={item.category}>
-            <h3>{item.name}</h3>
-            <p>{item.description}</p>
-          </li>
-        ))}
-      </ul>
+      {filteredItems.length === 0 ? (
+        <p>No items found</p>
+      ) : (
+        <ul>
+          {filteredItems.map((item) => (
+            <li key={item.id} category={item.category}>
+              <h3>{item.name}</h3>
+              <p>{item.description}</p>
+            </li>
+          ))}
+        </ul>
+      )}
     </>
   );
 }

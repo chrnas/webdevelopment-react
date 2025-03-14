@@ -3,24 +3,6 @@ import OfferCard from './OfferCard.jsx'
 
 export default function HomePage() {
 
-    const margharitaParams = {
-        descriptionId: 'margaritha-offercard-description',
-        ingredientsId: 'margaritha-offercard-ingredients',
-        offerCardDescription: 'En klassisk pizza med tomatsås, mozzarella och färsk basilika – enkel och smakrik.',
-        offerText: 'Rea 20 %',
-        src: './src/assets/margarita.webp',
-        altText: 'pizza, margarita'
-    }
-
-    const vesuvioParams = {
-        descriptionId: 'vesuvio-offercard-description',
-        ingredientsId: 'vesuvio-offercard-ingredients',
-        offerCardDescription: 'En pizza med tomatsås, mozzarella och skinka – en fyllig och härlig favorit!',
-        offerText: 'Rea 30 %',
-        src: './src/assets/vesuvio.webp',
-        altText: 'pizza, vesuvio'
-    }
-
     return (
         <>
          <main>
@@ -32,8 +14,16 @@ export default function HomePage() {
             </div>
             <div className="main-content">
                 <div className="offer-lane">
-                    <OfferCard params={margharitaParams}/>
-                    <OfferCard params={vesuvioParams}/>
+                    <OfferCard offerCardDescription='En klassisk pizza med tomatsås, mozzarella och färsk basilika – enkel och smakrik.'
+                                offerText='Rea 20 %'
+                                altText='pizza, margarita'
+                                redirectLink='/menu?filter=Margherita'
+                    />
+                    <OfferCard offerCardDescription='En pizza med tomatsås, mozzarella och skinka – en fyllig och härlig favorit!'
+                                offerText='Rea 30 %'
+                                altText='pizza, vesuvio'
+                                redirectLink='/menu?filter=Vesuvio'
+                    />
                 </div>
             </div>
         </main>
