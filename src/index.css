@@ -253,6 +253,7 @@ video {
   height: auto; /* Adjust height to maintain aspect ratio */
   max-width: 600px; /* Prevents too much stretching */
   border:0;
+  max-width: 100%;
 }
 
 .form-area{
@@ -346,8 +347,7 @@ nav a {
 }
 
 video {
-  width: 90vw;
-  height: auto;
+  width: 100vw;
 }
 
 }
