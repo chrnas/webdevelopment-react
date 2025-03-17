@@ -61,7 +61,7 @@ export default function MenuDisplay({ items }) {
         type="text"
         value={filterValue}
         onChange={handleFilterChange}
-        placeholder="Filter items"
+        placeholder="Sök..."
       />
 
       {filteredItems.length === 0 ? (
