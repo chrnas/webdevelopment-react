@@ -1,5 +1,5 @@
 import { Outlet, Link } from "react-router-dom";
-import logo from '../../src/assets/vallastadenpizzeria_logo.png'
+import logo from '../../public/assets/vallastadenpizzeria_logo.png'
 
 const Layout = () => {
   return (

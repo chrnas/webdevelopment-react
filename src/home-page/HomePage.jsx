@@ -1,7 +1,7 @@
 import Footer from '../components/Footer.jsx'
 import OfferCard from './OfferCard.jsx'
-import margaritaPic from '../../src/assets/margarita.webp'
-import vesuvioPic from '../../src/assets/vesuvio.webp'
+import margaritaPic from '../../public/assets/margarita.webp'
+import vesuvioPic from '../../public/assets/vesuvio.webp'
 
 export default function HomePage() {
 
