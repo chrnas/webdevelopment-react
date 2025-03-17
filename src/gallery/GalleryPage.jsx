@@ -2,7 +2,6 @@ import Footer from "../components/Footer";
 import EmailForm from "./EmailForm";
 import GalleryTable from "./GalleryTable";
 import GalleryVideo from "./GalleryVideo";
-import pizzaVideo from "../../public/assets/video_pizza.mp4"
 
 export default function Gallery() {
 
@@ -16,7 +15,7 @@ export default function Gallery() {
                     </h2>
                 </div>
                 <div className="main-content">
-                    <GalleryVideo src={pizzaVideo}/>
+                    <GalleryVideo src='videos/video_pizza.mp4'/>
                     <h2>
                         Kontakta oss gärna via mail om du har mediamaterial som skulle kunna bidra till vårt galleri
                     </h2>

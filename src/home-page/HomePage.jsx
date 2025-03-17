@@ -1,7 +1,5 @@
 import Footer from '../components/Footer.jsx'
 import OfferCard from './OfferCard.jsx'
-import margaritaPic from '../../public/assets/margarita.webp'
-import vesuvioPic from '../../public/assets/vesuvio.webp'
 
 export default function HomePage() {
 
@@ -21,14 +19,14 @@ export default function HomePage() {
                         offerText='Rea 20 %'
                         altText='pizza, margarita'
                         redirectLink='/menu?filter=Margherita'
-                        src={margaritaPic}
+                        src="/images/margarita.webp"
                     />
                     <OfferCard title='Vesuvio'
                         description='En pizza med tomatsås, mozzarella och skinka – en fyllig och härlig favorit!'
                         offerText='Rea 30 %'
                         altText='pizza, vesuvio'
                         redirectLink='/menu?filter=Vesuvio'
-                        src={vesuvioPic}
+                        src="/images/vesuvio.webp"
                     />
                 </div>
             </div>
