@@ -213,7 +213,7 @@ nav a:hover {
   border-radius: 10px;
   box-shadow: #333;
   transition: transform 0.2s ease-in-out;
-  min-width: 30vh;
+  min-width: 40vh;
 }
 
 .offer-card:hover{
@@ -341,22 +341,13 @@ nav a {
 }
 
 .offer-card img {
-  width: 40vw; /* Make the image more responsive */
-  height: 40vw; /* Adjust height according to aspect ratio */
-}
-
-.offer-card p{
-  max-width: 10px
+  width: 30vw; /* Make the image more responsive */
+  height: 30vw; /* Adjust height according to aspect ratio */
 }
 
 video {
   width: 90vw;
   height: auto;
-}
-
-img {
-  max-width: 20vw;
-  max-height: 20vw;
 }
 
 }
