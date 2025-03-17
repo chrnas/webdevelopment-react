@@ -36,7 +36,7 @@ export default function MenuDisplay({ items }) {
   };
 
   const handleCategoryClick = (category) => {
-    const newCategory = selectedCategory === category ? "" : category; // Toggle category
+    const newCategory = selectedCategory === category ? "" : category;
     setSelectedCategory(newCategory);
     updateURL(filterValue, newCategory);
   };
