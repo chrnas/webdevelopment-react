@@ -213,6 +213,7 @@ nav a:hover {
   border-radius: 10px;
   box-shadow: #333;
   transition: transform 0.2s ease-in-out;
+  min-width: 30vh;
 }
 
 .offer-card:hover{
@@ -352,6 +353,12 @@ video {
   width: 90vw;
   height: auto;
 }
+
+img {
+  max-width: 20vw;
+  max-height: 20vw;
+}
+
 }
 
 @media print {
