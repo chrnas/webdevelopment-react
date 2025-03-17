@@ -22,7 +22,7 @@ export default function MenuDisplay({ items }) {
         : true;
       return (
         (item.name.toLowerCase().includes(lowerFilterValue) ||
-          item.description.toLowerCase().includes(lowerFilterValue) ||
+          (item.description+', '+item.cost).toLowerCase().includes(lowerFilterValue) ||
           item.category.toLowerCase().includes(lowerFilterValue)) &&
         matchesCategory
       );
@@ -70,7 +70,7 @@ export default function MenuDisplay({ items }) {
         <ul>
           {filteredItems.map((item) => (
             <li key={item.id} category={item.category}>
-              <h3>{item.name}</h3>
+              <h3>{item.name}, {item.cost}</h3>
               <p>{item.description}</p>
             </li>
           ))}
